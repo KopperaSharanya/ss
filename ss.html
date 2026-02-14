@@ -1,0 +1,133 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Good Morning Sagar 💙</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #89f7fe, #66a6ff, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position:0% 50%; }
+    50% { background-position:100% 50%; }
+    100% { background-position:0% 50%; }
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    padding:40px;
+    width:450px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,0.2);
+    border: 4px solid;
+    border-image: linear-gradient(45deg, #36d1dc, #5b86e5, #a18cd1) 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(30px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+h2 {
+    font-size:24px;
+    background: linear-gradient(45deg,#36d1dc,#5b86e5,#a18cd1);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+button {
+    padding:12px 20px;
+    margin:10px;
+    border:none;
+    border-radius:15px;
+    font-size:15px;
+    cursor:pointer;
+    color:white;
+    background: linear-gradient(45deg,#36d1dc,#5b86e5);
+    transition:0.3s;
+}
+
+button:hover {
+    transform:scale(1.1);
+    background: linear-gradient(45deg,#5b86e5,#36d1dc);
+}
+
+.message {
+    margin-top:20px;
+    font-size:16px;
+    font-weight:bold;
+    display:none;
+    animation: fadeMsg 2s ease-in-out;
+}
+
+@keyframes fadeMsg {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.colorfulText {
+    background: linear-gradient(90deg, #36d1dc, #5b86e5, #a18cd1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+</style>
+
+<script>
+function showMessage(){
+    alert("Good Morning Sagar ☀️💙\nYou are truly a genuine person.");
+
+    document.getElementById("msg1").style.display="block";
+}
+
+function showSorry(){
+    alert("I sincerely apologize if I ever hurt you.");
+
+    document.getElementById("msg2").style.display="block";
+}
+
+function showSmile(){
+    alert("Stay the same amazing friend 😊✨");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Good Morning, Sagar ☀️</h2>
+
+    <button onclick="showMessage()">Click Here 💙</button>
+    <button onclick="showSorry()">A Small Note 💭</button>
+    <button onclick="showSmile()">Smile 😊</button>
+
+    <div id="msg1" class="message colorfulText">
+        I truly appreciate your care and support.<br><br>
+        Your guidance and trust mean a lot to me.
+    </div>
+
+    <div id="msg2" class="message colorfulText">
+        If I ever made a mistake or hurt you unknowingly,<br><br>
+        I sincerely apologize.<br><br>
+        I value our friendship deeply. 💙
+    </div>
+
+</div>
+
+</body>
+</html>
